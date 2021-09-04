@@ -17,18 +17,19 @@ namespace WinBiblioteca
         public MenuPrincipal()
         {
             InitializeComponent();
-            tsmiNuevoAutor.Click += OpcionesMenu;
+            tsmiNuevoAutor.Click += OpcionesMenu; // Estos son los dos botones con eventos que tiene el menu principal
             tsmiConsultaAutores.Click += OpcionesMenu;
+            tsmiConsultaBD.Click += OpcionesMenu;
 
         }
 
         private void OpcionesMenu(object sender, EventArgs e)
         {
-            ToolStripMenuItem opcion = sender as ToolStripMenuItem;
+            ToolStripMenuItem opcion = sender as ToolStripMenuItem; //propiedad de visual para los dos opciones (Agregar y consultar)
             switch (opcion.Name)
             {
                 case "tsmiNuevoAutor":
-                    Form1 objFormNuevo = new Form1();
+                    Form1 objFormNuevo = new Form1(); // para agregar autor nos dirigimos al form1 
                     objFormNuevo.MdiParent = this;
                     objFormNuevo.StartPosition = FormStartPosition.CenterScreen;
                     objFormNuevo.Show();
@@ -38,6 +39,12 @@ namespace WinBiblioteca
                     objFormConsulta.MdiParent = this;
                     objFormConsulta.StartPosition = FormStartPosition.CenterScreen;
                     objFormConsulta.Show();
+                    break;
+                case "tsmiConsultaBD":
+                    FrmConsultaAutoresBD objFormConsultaAutoresBD = new FrmConsultaAutoresBD();
+                    objFormConsultaAutoresBD.MdiParent = this;
+                    objFormConsultaAutoresBD.StartPosition = FormStartPosition.CenterScreen;
+                    objFormConsultaAutoresBD.Show();
                     break;
                 default:
                     break;

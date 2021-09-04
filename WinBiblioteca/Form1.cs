@@ -24,7 +24,7 @@ namespace WinBiblioteca
         {
             //codigo va a ejecutarse cuando el usuario 
             //haga click en alguno de los 2 botones
-            Button boton = sender as Button;
+            Button boton = sender as Button; // vuelvo a poner las propiades del boton de .net
             switch (boton.Name)
             {
                 case "btnCerrar":
@@ -40,8 +40,12 @@ namespace WinBiblioteca
                     objEntidad.FechaNacimiento = dtpFechaNacimiento.Value;
                     objEntidad.Nacionalidad = cboPaises.SelectedItem.ToString();
 
-                    objLogica.Agregar(Program.ListaAutores, objEntidad);
-                    MessageBox.Show("Autor agregado a la coleccion!!!");
+                    //objLogica.Agregar(Program.ListaAutores, objEntidad);
+                    //MessageBox.Show("Autor agregado a la coleccion!!!");
+
+                    //llamo al agregar de logica sobrecargado
+                    objLogica.Agregar(objEntidad);
+                    MessageBox.Show("Autor agregado a la base de datos!");
                     break;
                 default:
                     break;

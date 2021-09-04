@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tlpAutor = new System.Windows.Forms.TableLayoutPanel();
+            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblFechaNacimiento = new System.Windows.Forms.Label();
             this.lblNacionalidad = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnConfirmar = new System.Windows.Forms.Button();
             this.cboPaises = new System.Windows.Forms.ComboBox();
             this.tlpAutor.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             this.tlpAutor.Controls.Add(this.btnCerrar, 1, 4);
             this.tlpAutor.Controls.Add(this.cboPaises, 1, 3);
             this.tlpAutor.Location = new System.Drawing.Point(18, 15);
-            this.tlpAutor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tlpAutor.Margin = new System.Windows.Forms.Padding(4);
             this.tlpAutor.Name = "tlpAutor";
             this.tlpAutor.RowCount = 5;
             this.tlpAutor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.1165F));
@@ -70,6 +70,28 @@
             this.tlpAutor.Size = new System.Drawing.Size(588, 507);
             this.tlpAutor.TabIndex = 0;
             this.tlpAutor.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnConfirmar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnConfirmar.Location = new System.Drawing.Point(7, 404);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(281, 96);
+            this.btnConfirmar.TabIndex = 10;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtNombre.Location = new System.Drawing.Point(299, 147);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(222, 22);
+            this.txtNombre.TabIndex = 6;
             // 
             // lblApellido
             // 
@@ -120,26 +142,17 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtApellido.Location = new System.Drawing.Point(299, 43);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(222, 22);
             this.txtApellido.TabIndex = 5;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNombre.Location = new System.Drawing.Point(299, 147);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(222, 22);
-            this.txtNombre.TabIndex = 6;
             // 
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(299, 243);
-            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(222, 22);
             this.dtpFechaNacimiento.TabIndex = 8;
@@ -150,25 +163,12 @@
             this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCerrar.ForeColor = System.Drawing.Color.Silver;
             this.btnCerrar.Location = new System.Drawing.Point(299, 404);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(282, 96);
             this.btnCerrar.TabIndex = 9;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // btnConfirmar
-            // 
-            this.btnConfirmar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnConfirmar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnConfirmar.Location = new System.Drawing.Point(7, 404);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(281, 96);
-            this.btnConfirmar.TabIndex = 10;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = false;
             // 
             // cboPaises
             // 
@@ -193,7 +193,7 @@
             this.ClientSize = new System.Drawing.Size(632, 527);
             this.Controls.Add(this.tlpAutor);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

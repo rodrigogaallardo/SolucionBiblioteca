@@ -36,6 +36,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.tsmiConsultaBD = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,8 @@
             // 
             this.autoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiNuevoAutor,
-            this.tsmiConsultaAutores});
+            this.tsmiConsultaAutores,
+            this.tsmiConsultaBD});
             this.autoresToolStripMenuItem.Name = "autoresToolStripMenuItem";
             this.autoresToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.autoresToolStripMenuItem.Text = "Autores";
@@ -62,13 +64,13 @@
             // tsmiNuevoAutor
             // 
             this.tsmiNuevoAutor.Name = "tsmiNuevoAutor";
-            this.tsmiNuevoAutor.Size = new System.Drawing.Size(180, 22);
+            this.tsmiNuevoAutor.Size = new System.Drawing.Size(205, 22);
             this.tsmiNuevoAutor.Text = "Nuevo";
             // 
             // tsmiConsultaAutores
             // 
             this.tsmiConsultaAutores.Name = "tsmiConsultaAutores";
-            this.tsmiConsultaAutores.Size = new System.Drawing.Size(180, 22);
+            this.tsmiConsultaAutores.Size = new System.Drawing.Size(205, 22);
             this.tsmiConsultaAutores.Text = "Consulta";
             // 
             // statusStrip
@@ -86,6 +88,12 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
+            // 
+            // tsmiConsultaBD
+            // 
+            this.tsmiConsultaBD.Name = "tsmiConsultaBD";
+            this.tsmiConsultaBD.Size = new System.Drawing.Size(205, 22);
+            this.tsmiConsultaBD.Text = "Consulta a Base de datos";
             // 
             // MenuPrincipal
             // 
@@ -116,6 +124,7 @@
         private System.Windows.Forms.ToolStripMenuItem autoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsmiNuevoAutor;
         private System.Windows.Forms.ToolStripMenuItem tsmiConsultaAutores;
+        private System.Windows.Forms.ToolStripMenuItem tsmiConsultaBD;
     }
 }
 
